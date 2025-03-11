@@ -1,15 +1,16 @@
 import React from 'react'
 import Container from '../Container'
 import Logo from './Logo'
+import { Search } from './Search'
 
 function Navbar() {
   return (
     <div className='fixed w-full bg-blue z-10 shadow-sm'>
-        <div className='py-4 
+      <div className='py-4 
         border-b-[1px]
         '>
-            <Container>
-            <div
+        <Container>
+          <div
             className='
             flex
             flex-row
@@ -18,12 +19,13 @@ function Navbar() {
             gap-3
             md-gap-0
             '
-            >
-                <Logo/>
-            </div>
-            </Container>
+          >
+            <Logo />
+            <Search/> 
+          </div>
+        </Container>
 
-        </div>
+      </div>
     </div>
   )
 }
